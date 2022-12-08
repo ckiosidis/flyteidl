@@ -36,6 +36,11 @@ message WorkflowExecutionEvent {
         // Raw output data produced by this workflow execution.
         core.LiteralMap output_data = 7;
     }
+
+    core.Identifier launch_plan_id = 8;
+
+    core.Identifier workflow_id = 9;
+
 }
 
 message NodeExecutionEvent {
